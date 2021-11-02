@@ -534,13 +534,21 @@ h1{
 }
 
 .elementsfiltres a{
-    padding: 8px 8px 8px 8px;
+    padding: 8px 8px 8px 0;
+}
+
+.elementsfiltres a:hover{
+  background-color: #f2f2f2;
+  padding: 10px 8px 10px 0;
+  border: none;
+  border-radius: 50px 50px 50px 50px;
 }
 
 .icon{
     color: #0065fc;
     background-color: #deebff;
     padding: 10px;
+    margin-right: 8px;
     border-radius: 50%;
 }
 
@@ -568,6 +576,7 @@ h1{
     background-color: #f2f2f2;
     border-radius:10px 10px 10px 10px;
     margin-right: 2%;
+    padding-bottom: 2%;
     width: 65%;
 }
 
@@ -579,24 +588,28 @@ h1{
     margin-bottom: 25px;
 }
 
+.hebergements a{
+  width: 31%;
+}
+
 .hebergements li{
     background-color: #fff;
-    /* width: 31%; */
     margin: 10px;
     padding: 4px;
     border-radius: 20px;
-    box-shadow: 4px 4px 14px 4px #dddddd;
+    box-shadow: 0px 2px 15px rgb(217, 217, 217);
 }
 
 .more{
   font-weight: bold;
+  padding: 20px;
 }
 
 /** MODIFICATION IMAGE HEBERGEMENTS **/
 
 .hebergements img{
-    border-radius: 20px 20px 0 0;
-    width: 190px;
+    border-radius: 18px 18px 0 0;
+    width: 100%;
     height: 100px;
     object-fit: cover;
 }
@@ -615,12 +628,13 @@ h1{
 
 .populaire{
     background-color: #f2f2f2;
-    border-radius:10px 10px 10px 10px;
+    border-radius:20px 20px 20px 20px;
     width: 33%;
 }
 
 .populaire-icon h2{
-  margin:0;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 .populaire-icon{
@@ -636,33 +650,82 @@ h1{
 
 .populaire li{
     display: flex;
-    align-items: flex-start;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 4px 4px 14px 4px #dddddd;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px rgb(217, 217, 217);
     padding: 4px;
-    margin: 20px;
+    margin: 5%;
 }
 
 .populaire img{
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 18px 0 0 18px;
 }
 
-
-.etoile-populaire{
-  margin-bottom: 20px;
+.text-populaire{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 2%;
 }
 
 /** MODIFICATIONS ACTIVITES *********************************************/
 
 .activites{
   display: flex;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
-.box-activites-1{
+
+.box-activites{
+  width: 23%;
+}
+
+.box-activites a{
+  box-shadow: 0px 2px 15px rgb(217, 217, 217);
+  border-radius: 20px;
+  display: block;
+}
+
+.block-double{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-activites img{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.block-simple img{
+  height: 350px;
+}
+
+.fort-pomegues img{
+  height: 180px;
+}
+
+.iles-frioul img{
+  height: 110px;
+}
+
+.notre-dame img{
+  height: 140px;
+}
+
+.parc-longchamp img{
+  height: 150px;
+}
+
+.activites h4{
+  padding: 10px;
+}
+
+/* .box-activites-1{
   margin: 10px;
   border-radius: 10px;
   box-shadow: 4px 4px 14px 4px #dddddd;
@@ -688,9 +751,7 @@ h1{
   object-fit: none;
 }
 
-.activites h4{
-  padding: 10px;
-}
+ */
 
 /** SETTINGS FOOTER ****************************************************/
 
