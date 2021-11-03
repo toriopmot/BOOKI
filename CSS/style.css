@@ -498,6 +498,7 @@ h1{
 
 .champ{
     border-color: transparent;
+    outline: none;
 }
 
 .bouton{
