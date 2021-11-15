@@ -608,12 +608,13 @@ h1{
 }
 
 .hebergements a{
-  width: 31%;
+  display: block;
 }
 
 .hebergements li{
+    width: 31%;
     background-color: #fff;
-    margin: 10px;
+    margin: 10px 0 10px 0;
     padding: 4px;
     border-radius: 20px;
     box-shadow: 0px 2px 15px rgb(217, 217, 217);
@@ -621,7 +622,7 @@ h1{
 
 .more{
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
 }
 
 /** MODIFICATION IMAGE HEBERGEMENTS **/
@@ -667,8 +668,12 @@ h1{
   align-items: center;
 }
 
+.populaire a{
+  display: flex;
+}
+
 .populaire li{
-    display: flex;
+    display: block;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 2px 15px rgb(217, 217, 217);
@@ -798,6 +803,7 @@ footer .container{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 25px;
+    
   }
 
   .text-populaire h4{
@@ -805,12 +811,14 @@ footer .container{
   }
 
   .populaire a{
-    width: 31%;
-    height: 241px;
+    display: flex;
+    flex-direction: column;
+    
   }
 
   .populaire li{
-    flex-direction: column;
+    width: 31%;
+    margin: 0;
   }
 
   .populaire img{
@@ -904,6 +912,7 @@ footer .container{
 
   .hebergements ul{
     flex-direction: column;
+    align-items: center;
   }
 
   .hebergements{
@@ -911,8 +920,8 @@ footer .container{
     background-color: transparent;
   }
 
-  .hebergements a{
-    width: 100%;
+  .hebergements li{
+    width: 90%;
   }
 
   .populaire{
